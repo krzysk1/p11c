@@ -3,3 +3,5 @@ The PZL P.11 was a Polish fighter aircraft, designed in the early 1930s by PZL i
 
 Made by Krzysztof Kaniewski. 
 3D model by Anders Lejczak (www.colacola.se).
+
+Note that model has no detailed cockpit!

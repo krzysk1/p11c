@@ -878,11 +878,15 @@
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
             >	
-            <[rotatingbodygraphics][RightWheel][]
+            <[graphics_wheel][RightWheel][]
                 <[string8][GeometryList][ r_tire r_tire_c ]>
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
-                <[uint32][AngleID][RightWheelHull.RotationAngle]> 
+                <[uint32][AngleID][RightWheelHull.RotationAngle]>
+                <[uint32][GroundID][RightWheelHull.Ground]>
+                <[uint32][DeformationID][RightWheelHull.Deformation]>
+                <[float64][Radius][0.381]>
+                <[float64][RimRadius][0.1413]>					
     			<[tmvector3d][Axis][0.0 0.991427 0.130661 ]>
                 <[tmvector3d][Pivot][0.35045 -1.1496 -1.2753]> 
             >
@@ -891,11 +895,15 @@
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
             >			
-            <[rotatingbodygraphics][LeftWheel][]
+            <[graphics_wheel][LeftWheel][]
                 <[string8][GeometryList][ l_tire l_tire_c ]>
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
                 <[uint32][AngleID][LeftWheelHull.RotationAngle]> 
+                <[uint32][GroundID][LeftWheelHull.Ground]>
+                <[uint32][DeformationID][LeftWheelHull.Deformation]>
+                <[float64][Radius][0.381]>
+                <[float64][RimRadius][0.1413]>					
     			<[tmvector3d][Axis][0.0 0.991427 -0.130661 ]>
                 <[tmvector3d][Pivot][0.35045 1.1496 -1.2753]> 
             >

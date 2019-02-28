@@ -472,6 +472,41 @@
                 <[string8][Input][MixElevatorTrim.Output]>
                 <[tmvector2d][Range][ -1.0 1.0 ]>
             >
+            <[input_default][AileronTrim][]
+                <[string8][Input][Controls.AileronTrim]>
+                <[uint][Positions][401]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Value][0.0]>
+                <[float64][Speed][0.1]>
+            >
+            <[mixlinear][AileronTrimmedMix][]
+                <[string8][Input0][AileronInput.Output]>
+                <[string8][Input1][AileronTrim.Output]>
+                <[float64][Weight0][1.0]>
+                <[float64][Weight1][0.2]>
+                <[float64][Offset][0.0]>
+            >
+            <[clamp][AileronTrimmed][]
+                <[string8][Input][AileronTrimmedMix.Output]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+            >
+            <[input_default][RudderTrimInput][]
+                <[string8][Input][Controls.RudderTrim]>
+                <[uint][Positions][101]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Speed][0.3]>
+            >
+            <[mixlinear][RudderTrimmedMix][]
+                <[string8][Input0][RudderInput.Output]>
+                <[string8][Input1][RudderTrimInput.Output]>
+                <[float64][Weight0][1.0]>
+                <[float64][Weight1][0.2]>
+                <[float64][Offset][0.0]>
+            >
+            <[clamp][RudderTrimmed][]
+                <[string8][Input][RudderTrimmedMix.Output]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+            >
 			
             // wheelbrake
             <[input_default][LeftBrakeInput][]
@@ -516,7 +551,7 @@
             // Servos
 
             <[servoclassic][ServoLeftAileron][]
-                <[string8][Input][AileronInput.Output]>
+                <[string8][Input][AileronTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.322886]>
@@ -527,7 +562,7 @@
                 <[string8][Input][ServoLeftAileron.Output]>
             >			
             <[servoclassic][ServoRightAileron][]
-                <[string8][Input][AileronInput.Output]>
+                <[string8][Input][AileronTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.322886]>
@@ -549,7 +584,7 @@
                 <[string8][Input][ServoElevator.Output]>
             >			
             <[servoclassic][ServoRudder][]
-                <[string8][Input][RudderInput.Output]>
+                <[string8][Input][RudderTrimmed.Output]>
                 <[float64][Speed][10.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.349066]>

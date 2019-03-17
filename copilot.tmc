@@ -1,0 +1,18 @@
+<[file][][]
+    <[hints][][]
+        // PZL P-11c
+        <[float64][MaximumTakeOffMass][1650.0]>
+        <[float64][WingSpan][10.72]>
+        <[float64][WingArea][17.9]>
+        <[float64][HeightOffset][-1.29756]>
+        <[float64][ApproachSpeed][33.1]>
+        <[float64][PatternSpeed][33.1]>
+        <[float64][InitialClimbSpeed][33.1]>
+        <[bool][TailDragger][true]>
+        <[bool][RudderTrimRequired][false]>
+        <[float64][RudderSteeringGain][3.0]>
+        <[float64][RudderCrossWind][1.0]>
+        <[float64][FlareHeightScaling][0.9]>
+        <[float64][FlareExpectedNoseDrop][0.3]>
+    >
+>

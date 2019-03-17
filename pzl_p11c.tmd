@@ -1,4 +1,11 @@
 <[file][][]
+	//-------------------------------------
+	// Plane: PZL P.11c
+	// Compilation: krzysk (at) wp.pl
+	// 3D model: anders.lejczak (at) colacola.se
+	// Date: Fri Apr 17 2015; Feb 2019
+	//-------------------------------------
+
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
@@ -6,7 +13,7 @@
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
                 <[string8][PowerPosition][ThrottleInput.Output]>
                 <[string8][BrakePosition][LeftBrakeInput.Output]>
-                <[tmvector3d][LookAtPosition][0 0 0]>  //mass: 1394.0 ( -0.019 0.000 0.257 )
+                <[tmvector3d][LookAtPosition][0 0 0]>  
             >
 
             // Cameras
@@ -39,7 +46,7 @@
 
 
             // Rigidbodies
-
+			// mass: 1394.0 ( -0.019 0.000 0.257 )
             <[rigidbody][Fuselage][]
                 <[float64][Mass][990.4]>
                 <[tmvector3d][InertiaLength][4.549896 1.152144 1.467054]>
@@ -802,7 +809,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
-    			<[tmvector3d][Axis][1.0 0.0 0.0]>
+    			<[tmvector3d][Axis][-1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][1.9631 0 -0.0002]> 
             >
             <[graphics_propeller_blade][PropellerBlade][]

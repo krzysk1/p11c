@@ -128,8 +128,8 @@
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][RightGear]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
-                <[float64][Kp][412000.81651]>
-                <[float64][Kd][1224.4083]>
+                <[float64][Kp][412000.8]>
+                <[float64][Kd][1224.4]>
                 <[tmvector3d][R0][0.3444 -0.3294 -0.2928]> 
                 <[uint32][Type][0]>
             >
@@ -143,8 +143,8 @@
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
-                <[float64][Kp][412000.81651]>
-                <[float64][Kd][1224.4083]>
+                <[float64][Kp][412000.8]>
+                <[float64][Kd][1224.4]>
                 <[tmvector3d][R0][0.3444 0.3294 -0.2928]> 
                 <[uint32][Type][0]>
             >
@@ -656,7 +656,7 @@
                 <[float64][LateralDragCoefficient][0.0]>
                 <[string8][Airfoil][AirfoilPropeller]>
                 <[string8][Body][PropellerBody]>
-                <[string8][EngineRotationSpeed][DriveShaft.GetRotationSpeed]> //Gear.GetRotationSpeed1]>		
+                <[string8][EngineRotationSpeed][DriveShaft.RotationSpeed]> 	
                 <[uint32][NumberBlades][2]>
                 <[float64][AspectRatio][6.8793]>
                 <[float64][TorqueReduction][0.0]>
@@ -676,7 +676,7 @@
             <[gear][Gear][]
                 <[string8][AddTorque0][DriveShaft.AddTorque]>
                 <[string8][AddInertia0][DriveShaft.AddInertia]>
-                <[string8][RotationSpeed0][DriveShaft.GetRotationSpeed]> 
+                <[string8][RotationSpeed0][DriveShaft.RotationSpeed]> 
                 <[float64][ReductionRatio][0.5714]>
                 <[float64][Efficiency][1.0]> 
             >	
@@ -697,7 +697,7 @@
                 <[float64][Displacement][0.008469]>
             >
             <[output][RotationSpeed][]
-                <[string8][Input][DriveShaft.GetRotationSpeed]>
+                <[string8][Input][DriveShaft.RotationSpeed]>
             >			
 
 

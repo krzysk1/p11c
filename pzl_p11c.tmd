@@ -1,9 +1,10 @@
 <[file][][]
+
 	//-------------------------------------
 	// Plane: PZL P.11c
 	// Compilation: krzysk (at) wp.pl
 	// 3D model: anders.lejczak (at) colacola.se
-	// Date: Fri Apr 17 2015; Feb 2019; Aug 2020
+	// Date: Fri Apr 17 2015; Feb 2019; Sep 2020
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -151,11 +152,11 @@
             <[collisionhull][CollisionTailGear][]
                 <[string8][Body][Fuselage]>
                 <[string8][Geometry][TailSkid]>
-                <[float64][K][40000.0]>
+                <[float64][K][400000.0]>
                 <[float64][D][400.0]>
-                <[float64][StaticFrictionCoefficient][1.5]>
-                <[float64][KineticFrictionCoefficient][0.9]>
-                <[bool][Blade][false]>
+                <[float64][StaticFrictionCoefficient][1]>
+                <[float64][KineticFrictionCoefficient][1]>
+                <[bool][Blade][false]>				
             >
             <[collisionhull][CollisionLeftGear][]
                 <[string8][Body][LeftGear]>
@@ -800,7 +801,7 @@
         <[pointer_list_tmgraphics][GraphicObjects][]
 
             <[rigidbodygraphics][Fuselage][]
-                <[string8][GeometryList][ Fuselage Wings Nacelle Pipes Cockpit Panel Skin Antenna Windscreen Stabilizer StabilizerV ]>
+                <[string8][GeometryList][ Fuselage Wings Nacelle Pipes Cockpit Panel Skin Antenna Windscreen WindscreenInt Stabilizer StabilizerV ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >

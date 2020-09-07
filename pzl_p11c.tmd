@@ -801,7 +801,7 @@
         <[pointer_list_tmgraphics][GraphicObjects][]
 
             <[rigidbodygraphics][Fuselage][]
-                <[string8][GeometryList][ Fuselage Wings Nacelle Pipes Cockpit Panel Skin Antenna Windscreen WindscreenInt Stabilizer StabilizerV ]>
+                <[string8][GeometryList][ Fuselage Wings Nacelle Pipes Pipes2 Cockpit Panel Skin Antenna Windscreen WindscreenInt Stabilizer StabilizerV ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >

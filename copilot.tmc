@@ -5,14 +5,19 @@
         <[float64][WingSpan][10.72]>
         <[float64][WingArea][17.9]>
         <[float64][HeightOffset][-1.29756]>
-        <[float64][ApproachSpeed][33.1]>
-        <[float64][PatternSpeed][33.1]>
-        <[float64][InitialClimbSpeed][33.1]>
+        <[float64][ApproachSpeed][38.1]>
+        <[float64][PatternSpeed][48.1]>
+        <[float64][InitialClimbSpeed][45.1]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][Fighter][true]>
+        <[bool][Aerobatic][true]>
         <[bool][TailDragger][true]>
-        <[bool][RudderTrimRequired][false]>
+        <[bool][RudderTrimRequired][true]>
         <[float64][RudderSteeringGain][3.0]>
         <[float64][RudderCrossWind][1.0]>
-        <[float64][FlareHeightScaling][0.9]>
-        <[float64][FlareExpectedNoseDrop][0.3]>
+        <[float64][FlareHeightScaling][0.8]>
+        <[float64][FlareExpectedNoseDrop][2.3]>
+        <[float64][StarterMaximumTime][5.0]>
     >
 >

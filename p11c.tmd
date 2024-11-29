@@ -11,13 +11,11 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][0 0 0]>
             >
 
             // Cameras
 
             <[camera][CameraFollow][]
-                <[string8][Description][Behind aircraft]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][-13.2 0 1.4]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
@@ -27,6 +25,10 @@
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][-1.52 0 0.85]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][Kf][60.0]>
+                <[float64][Df][1.00]>
+                <[float64][Kt][0.08]>
+                <[float64][Dt][0.02]>				
                 <[bool][InCockpit][true]>
             >
             <[camera][CameraLeftWing][]
